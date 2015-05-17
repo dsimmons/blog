@@ -6,5 +6,8 @@ gem "middleman-livereload"
 gem "middleman-imageoptim"
 gem "middleman-minify-html"
 
+gem 'bitters'
+gem 'bourbon'
+
 # For feed.xml.builder
 gem "builder", "~> 3.0"
