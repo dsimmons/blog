@@ -97,6 +97,8 @@ GEM
       rack-test (~> 0.6.2)
       thor (>= 0.15.2, < 2.0)
       tilt (~> 1.4.1, < 2.0)
+    middleman-gh-pages (0.0.3)
+      rake (> 0.9.3)
     middleman-imageoptim (0.2.1)
       image_optim (~> 0.20.2)
       image_optim_pack (~> 0.2.1)
@@ -127,6 +129,7 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
+    rake (10.4.2)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
@@ -162,6 +165,7 @@ DEPENDENCIES
   builder (~> 3.0)
   middleman (~> 3.3.12)
   middleman-blog (~> 3.5.3)
+  middleman-gh-pages
   middleman-imageoptim
   middleman-livereload
   middleman-minify-html
