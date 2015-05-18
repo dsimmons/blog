@@ -1,0 +1,62 @@
+// .hero {
+//   background-size:     cover;
+//   background-position: center center;
+//   background-color:    cadetblue;
+//   height:              250px;
+// }
+
+// .hero-overlay {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+// }
+
+body > header {
+  margin-bottom:    60px;
+  color:            #fff;
+  text-align:       center;
+
+  section {
+    background-color: #3B3B35;
+    width:            100%;
+    padding:          0 20px;
+    margin-bottom:    30px;
+
+    div {
+      max-width: 760px;
+      margin:    0 auto;
+    }
+
+    .title {
+      margin:    0;
+      padding:   6px;
+      font-size: 56px;
+    }
+
+    .tagline {
+      margin:      0;
+      font-size:   16px;
+      font-weight: 300;
+    }
+
+    .social-links {
+      padding:    12px;
+      margin-top: 4px;
+    }
+  }
+
+  .nav-item {
+    display:     inline;
+    font-weight: bold;
+
+    .nav-link {
+      padding:   5px 25px;
+
+      &:hover {
+        background-color: rgba(59, 59, 53, 0.1);
+      }
+    }
+  }
+}

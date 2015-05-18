@@ -1,0 +1,25 @@
+<header>
+  <section>
+    <div>
+      <h1 class="title">Dan Simmons</h1>
+      <h4 class="tagline">Years ago I discovered the meaning of life but forgot to write it down.</h2>
+      <div class="social-links">
+        <% data.social_links.each do |key, val| %>
+          <a class="social-link" href="<%= val %>">
+            <%= partial(:social_link, locals: { icon: "icon-#{key}" }) %>
+          </a>
+        <% end %>
+      </div>
+    </div>
+  </section>
+  <nav class="container">
+    <ul>
+      <li class="nav-item">
+        <%= link_to "About", "/about", class: 'nav-link' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Posts", "/", class: 'nav-link' %>
+      </li>
+    </ul>
+  </nav>
+</header>

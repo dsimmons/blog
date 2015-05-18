@@ -1,0 +1,87 @@
+/* ================================================================================
+.icon-name {
+  font-size: 32px; // works because "width" & "height" were set using em units
+  color:     red;  // works because "fill" was set to "currentColor"
+}
+================================================================================ */
+
+.social-link {
+  color: inherit;
+  &:hover {
+    color: inherit;
+  }
+}
+
+.icon {
+  display:      inline-block;
+  width:        1.2em;
+  height:       1.2em;
+  fill:         currentColor;
+  margin-right: 4px;
+}
+
+[class*='icon-twitter'] {
+  &:hover {
+    color: #38BBE7;
+  }
+}
+
+[class*='icon-facebook'] {
+  &:hover {
+    color: #3B5998;
+  }
+}
+
+[class*='icon-google-plus'] {
+  &:hover {
+    color: #DD4B38;
+  }
+}
+
+[class*='icon-quora'] {
+  &:hover {
+    color: #A11D00;
+  }
+}
+
+[class*='icon-linkedin'] {
+  &:hover {
+    color: #318FC4;
+  }
+}
+
+[class*='icon-github'] {
+  &:hover {
+    color: #151515;
+  }
+}
+
+[class*='icon-meetup'] {
+  &:hover {
+    color: #E51937;
+  }
+}
+
+[class*='icon-foursquare'] {
+  &:hover {
+    color: #F94877;
+  }
+}
+
+[class*='icon-feed'] {
+  &:hover {
+    color: #FF9900;
+  }
+}
+
+#icon-meetup_modified .path1 {
+  fill: rgb(229, 25, 55) !important;
+}
+
+#icon-meetup_modified .path2, #icon-meetup_modified .path5, #icon-meetup_modified .path7, #icon-meetup_modified .path11 {
+  fill: rgb(255, 255, 255);
+}
+
+#icon-meetup_modified .path3, #icon-meetup_modified .path4, #icon-meetup_modified .path6, #icon-meetup_modified .path8, #icon-meetup_modified .path9, #icon-meetup_modified .path10 {
+  fill: rgb(0, 0, 0);
+}
