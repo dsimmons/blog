@@ -15,31 +15,42 @@
 
 body > header {
   margin-bottom:    60px;
-  // background-color: #3B3B35;
   color:            #fff;
   text-align:       center;
-  // padding:          20px;
 
   section {
     background-color: #3B3B35;
     width:            100%;
-    font-size:        55px;
-    padding:          20px;
-    margin-bottom:    12px;
+    padding:          0 20px;
+    margin-bottom:    30px;
 
     div {
       max-width: 760px;
       margin:    0 auto;
     }
 
-    h1 {
-      margin: 0;
+    .title {
+      margin:    0;
+      padding:   6px;
+      font-size: 56px;
+    }
+
+    .tagline {
+      margin:      0;
+      font-size:   16px;
+      font-weight: 300;
+    }
+
+    .social-links {
+      padding:    12px;
+      margin-top: 4px;
     }
   }
 
-  nav li {
-    display: inline;
-    padding: 5px 25px;
+  .nav-link {
+    display:     inline;
+    padding:     5px 25px;
+    font-weight: bold;
 
     &:hover {
       background-color: rgba(253,127,5,0.1);
