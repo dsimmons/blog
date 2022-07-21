@@ -2,8 +2,9 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { getAllPosts } from '../lib/api'
 
-const Home: NextPage = () => {
+const Home: NextPage = ({ posts }) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -70,3 +71,9 @@ const Home: NextPage = () => {
 }
 
 export default Home
+
+export const getStaticProps = async () => {
+  return {
+    props: { posts: getAllPosts(), }
+  }
+}
