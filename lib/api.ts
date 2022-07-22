@@ -3,7 +3,7 @@ import matter from 'gray-matter'
 
 const postsDir = `${process.cwd()}/_posts`
 
-function loadPost(fileName: string) {
+export function loadPost(fileName: string) {
   const slug = fileName.replace(/\.md$/, '')
   const payload = fs.readFileSync(`${postsDir}/${fileName}`, 'utf8')
   const { data, content } = matter(payload)
@@ -11,11 +11,12 @@ function loadPost(fileName: string) {
   return {
     ...data,
     slug,
+    fileName,
     content
   }
 }
 
-export function getAllPosts() {
+export function loadAllPosts() {
   const postFiles = fs.readdirSync(postsDir)
   return postFiles
     .map(loadPost)
