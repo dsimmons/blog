@@ -1,15 +1,24 @@
 import { micromark } from 'micromark'
 import { loadAllPosts, loadPost } from '../../lib/api'
+import type Post from '../../interfaces/post'
 
-type Props = {}
+type Props = {
+  post: Post,
+}
 
-export default function Post({ post }) {
+export default function Post({ post }: Props) {
   return (
     <h1>{post.title}</h1>
   )
 }
 
-export async function getStaticProps({ params }) {
+type Params = {
+  params: {
+    slug: string,
+  }
+}
+
+export async function getStaticProps({ params }: Params) {
   const post = loadPost(`${params.slug}.md`)
   const content = micromark(post.content)
 
