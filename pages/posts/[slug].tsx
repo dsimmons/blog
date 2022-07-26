@@ -1,7 +1,11 @@
 import { micromark } from 'micromark'
-import { loadAllPosts, loadPost } from '../../lib/api'
+
+import Head from 'next/head'
 import Layout from '../../components/layout'
+
 import type Post from '../../interfaces/post'
+
+import { loadAllPosts, loadPost } from '../../lib/api'
 
 type Props = {
   post: Post,
@@ -10,6 +14,9 @@ type Props = {
 export default function Post({ post }: Props) {
   return (
     <Layout>
+      <Head>
+        <title>{post.title}</title>
+      </Head>
       <h1>{post.title}</h1>
     </Layout>
   )
