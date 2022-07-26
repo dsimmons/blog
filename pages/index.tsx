@@ -1,8 +1,8 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import Meta from '../components/meta'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import { loadAllPosts } from '../lib/api'
@@ -18,14 +18,7 @@ type Props = {
 const Home: NextPage<Props> = ({ posts }: Props) => {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Dan Simmons | /dev/simmonsd</title>
-        <meta
-          name="description"
-          content="Personal blog of Dan Simmons"
-        />
-        <link rel="icon" type="image/png" href="/favicon.png" />
-      </Head>
+      <Meta />
       <Header />
       <main className={styles.main}>
         <section>
