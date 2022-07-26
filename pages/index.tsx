@@ -24,7 +24,7 @@ const Home: NextPage<Props> = ({ posts }: Props) => {
           name="description"
           content="Personal blog of Dan Simmons"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
       </Head>
       <Header />
       <main className={styles.main}>
