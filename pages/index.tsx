@@ -34,7 +34,9 @@ const Home: NextPage<Props> = ({ posts }: Props) => {
         </ul>
         </section>
       </main>
-      <footer className={styles.footer}></footer>
+      <footer className={styles.footer}>
+        Simmons I/O &copy; {new Date().getFullYear()}
+      </footer>
     </div>
   )
 }
