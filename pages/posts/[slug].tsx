@@ -1,5 +1,6 @@
 import { micromark } from 'micromark'
 import { loadAllPosts, loadPost } from '../../lib/api'
+import Layout from '../../components/layout'
 import type Post from '../../interfaces/post'
 
 type Props = {
@@ -8,7 +9,9 @@ type Props = {
 
 export default function Post({ post }: Props) {
   return (
-    <h1>{post.title}</h1>
+    <Layout>
+      <h1>{post.title}</h1>
+    </Layout>
   )
 }
 
