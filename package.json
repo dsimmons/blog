@@ -1,7 +1,8 @@
 {
   "name": "blog",
-  "version": "0.1.0",
-  "private": true,
+  "description": "My personal blog!",
+  "homepage": "https://dan.simmons.io",
+  "license": "MIT",
   "scripts": {
     "build": "next build",
     "dev": "next dev",
@@ -30,9 +31,6 @@
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.2.8",
     "tailwindcss": "^3.3.2",
-    "typescript": "^5.0.4"
-  },
-  "ct3aMetadata": {
-    "initVersion": "7.12.1"
+   "typescript": "^5.0.4"
   }
 }
