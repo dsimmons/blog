@@ -9,8 +9,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        {children}
+      <body className="m-auto max-w-2xl dark:text-gray-100">
+        <main className="min-h-screen p-6 pt-3 md:pt-6">{children}</main>
         <Footer />
       </body>
     </html>
